@@ -1,0 +1,135 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.enterprise.barsemlona.barsemlona_20.CadastroFragment"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Cadastro"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editText"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Nome"
+        android:ems="10"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editText4"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Sobrenome"
+        android:ems="10"
+        android:id="@+id/editText5"
+        android:layout_below="@+id/editText4"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Senha"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/editText5"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        tools:text="Sexo:"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/editText2" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="1"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp"
+        android:id="@+id/radiogroup">
+
+        <RadioButton
+            android:text="Masculino"
+            android:id="@+id/radioButton2"
+            android:duplicateParentState="false"
+            android:checked="true"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:text="Feminino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton"
+            android:textSize="10sp"
+            android:textAllCaps="false" />
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="CPF:"
+        android:ems="10"
+        android:id="@+id/editText12"
+        android:layout_below="@+id/radiogroup"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Tel: ( )"
+        android:ems="10"
+        android:layout_below="@+id/editText12"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editText13" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="CEP: "
+        android:ems="10"
+        android:layout_below="@+id/editText13"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editText14" />
+
+    <Button
+        android:text="Cadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText14"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp"
+        android:id="@+id/button" />
+    </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
