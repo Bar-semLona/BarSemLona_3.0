@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.enterprise.barsemlona.barsemlona_20.DetalheFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            app:srcCompat="@drawable/ic_menu_gallery"
+            android:id="@+id/img_detalhe" />
+
+        <TextView
+            android:text="Nome do Produto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nm_detalhe"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:text="Preço De"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/price_detalhe"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:text="Preço Por"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/price_por_detalhe"
+            android:textAlignment="center" />
+
+        <TextView
+            android:text="Detalhes do Produto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_detalhe"
+            android:textAlignment="center"
+            android:layout_weight="0.38" />
+
+        <TextView
+            android:text="Categoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/category_detalhe"
+            android:textAlignment="center" />
+
+        <TextView
+            android:text="Digite a Quantidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/qtd_detalhe"
+            android:textAlignment="center" />
+
+        <Button
+            android:text="Comprar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_comprar"
+            android:textAlignment="center" />
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

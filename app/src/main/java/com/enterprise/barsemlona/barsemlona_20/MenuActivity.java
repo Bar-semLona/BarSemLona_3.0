@@ -67,7 +67,7 @@ public class MenuActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.peludo) {
             return true;
         }
 
@@ -88,16 +88,12 @@ public class MenuActivity extends AppCompatActivity
             CadastroFragment fragmento = new CadastroFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.frame, fragmento).commit();
         } else if (id == R.id.nav_slideshow) {
-
         } else if (id == R.id.nav_sobre) {
             TelaSobreFragment fragmento = new TelaSobreFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.frame, fragmento).commit();
         } else if (id == R.id.nav_share) {
-
         } else if (id == R.id.nav_send) {
-
         }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
