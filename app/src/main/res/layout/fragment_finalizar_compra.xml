@@ -1,0 +1,93 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.enterprise.barsemlona.barsemlona_20.FinalizarCompraFragment"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="15dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Finalizar Compra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/txt_title_finalizar"
+                android:textStyle="normal|bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:text="Endereço de Entrega"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_endereco"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:text="Aqui é Body Builder Ipsum PORRA! Tá comigo porra. Vamo monstro! É esse que a gente quer, é ele que nóis vamo buscar. Eita porra!, tá saindo da jaula o monstro! Vai subir árvore é o caralho porra! Sabe o que é isso daí? Trapézio descendente é o nome disso aí."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:text="Formas de Pagamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_title_adress"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="normal|bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="100dp" >
+
+                <RadioButton
+                    android:text="Cartão de Crédito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_credito"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="Cartão de Débito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_debito"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="Boleto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_boleto"
+                    android:layout_weight="1" />
+
+            </RadioGroup>
+
+            <Button
+                android:text="Concluir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_finalizar_compra" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
